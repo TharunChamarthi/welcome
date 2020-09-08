@@ -1,6 +1,6 @@
 var d= new Date();
-var h= d.getHours();
-var m=d.getMinutes();
+var h= d.getDate();
+var m=d.getMonth();
 var y=d.getFullYear();
 
 if(h<12){
@@ -12,7 +12,7 @@ else if(h<19){
 else{
     document.getElementById('h1').innerHTML='Hi..Good Night';
 }
-document.getElementById('h').innerHTML=h;
-document.getElementById('m').innerHTML=m;
+document.getElementById('h').innerHTML=h+1;
+document.getElementById('m').innerHTML=m+1;
 document.getElementById('y').innerHTML=y;
 
